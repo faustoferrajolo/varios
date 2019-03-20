@@ -1,0 +1,178 @@
+.wc-cuotas-list li {
+  display: block;
+  margin: 5px 0;
+  background: #fff;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.wc-cuotas-list li a.remove {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  background: #a00;
+  color: #fff;
+  display: block;
+}
+
+.wc-cuotas-list li input[type="text"] {
+  width: 80%;
+  margin-right: 10px;
+}
+
+.wc-cuotas-list li input[type="radio"] {
+  margin-right: 10px;
+}
+
+.wc-cuotas-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.wc-cuotas-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.wc-cuotas-table {
+  border-collapse: collapse;
+}
+
+.wc-cuotas-table th, .wc-cuotas-table td {
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.wc-cuotas-table thead th {
+  background: #666;
+  color: #fff;
+  border-left: 1px solid #aaa;
+}
+
+.wc-cuotas-table thead th:first-child {
+  border-left: 0;
+}
+
+.wc-cuotas-table thead tr:last-child th {
+  border-top: 1px solid #aaa;
+}
+
+.wc-cuotas-table tbody th {
+  background: #ddd;
+  text-align: left;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.wc-cuotas-table > tbody > tr > td {
+  background: #fff;
+  padding: 0;
+  border-left: 1px solid #ddd;
+}
+
+.wc-cuotas-table > tbody > tr > td input[type="number"] {
+  width: 60px;
+}
+
+.wc-cuotas-table > tbody > tr > td > div {
+  position: relative;
+  padding: 5px;
+}
+
+.wc-cuotas-table > tbody > tr > td > div span.wc-cuotas-enable {
+  display: none;
+  position: absolute;
+  background: rgba(255, 0, 0, 0.3);
+  font-size: 120%;
+  text-align: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 10;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.wc-cuotas-table > tbody > tr > td > div span.wc-cuotas-disable {
+  display: none;
+  cursor: pointer;
+  background: #a00;
+  color: #fff;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  position: absolute;
+  right: -12px;
+  top: -10px;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.wc-cuotas-table > tbody > tr > td > div:hover {
+  background: #eee;
+}
+
+.wc-cuotas-table > tbody > tr > td > div:hover span.wc-cuotas-disable {
+  display: block;
+}
+
+.wc-cuotas-table > tbody > tr > td > div.disabled {
+  background: none !important;
+}
+
+.wc-cuotas-table > tbody > tr > td > div.disabled span.wc-cuotas-enable {
+  display: block;
+  color: #fff;
+}
+
+.wc-cuotas-table > tbody > tr > td > div.disabled span.wc-cuotas-enable:hover {
+  background: rgba(0, 128, 0, 0.5);
+}
+
+.wc-cuotas-table > tbody > tr > td > div.disabled span.wc-cuotas-disable {
+  display: none !important;
+}
+
+.wc-cuotas-table > tbody > tr > td > div .wc-cuotas-provider-data td {
+  background: transparent;
+  padding: 0 5px;
+}
+
+.wc-cuotas-table > tbody > tr > td > div .wc-cuotas-provider-data td input::-webkit-outer-spin-button,
+.wc-cuotas-table > tbody > tr > td > div .wc-cuotas-provider-data td input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.wc-cuotas-table tbody tr:first-child td {
+  background: #fafafa;
+}
+
+.wc-cuotas-table.labels {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 500;
+}
+
+.wc-cuotas-table.labels tbody th {
+  height: 44px;
+}
+
+.wc-cuotas-order-info {
+  width: 100%;
+  clear: both;
+  float: left;
+}
